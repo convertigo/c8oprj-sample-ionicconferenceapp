@@ -1,8 +1,8 @@
-↑convertigo: 7.7.0.m006
+↑convertigo: 7.7.1.m006
 ↓IonicConferenceApp [core.Project]: 
   comment: This demo is based on Ionic Conference App but using the Convertigo Mobile Builder.
   corsOrigin: =Origin
-  version: 7.7.0
+  version: 7.8.0
   ↓conferenceapp [connectors.FullSyncConnector]: 🗏 connectors/conferenceapp.yaml
   ↓CheckRemoteInit [sequences.GenericSequence]: 🗏 sequences/CheckRemoteInit.yaml
   ↓fill_all_database [sequences.GenericSequence]: 🗏 sequences/fill_all_database.yaml
@@ -21,5 +21,5 @@
     ↓Application [mobile.components.ApplicationComponent]: 🗏 mobileApplication.yaml
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
-  ↓mobilebuilder_tpl_7_7_0_reference [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_7_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_7_0
+  ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0

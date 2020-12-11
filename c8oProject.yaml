@@ -1,8 +1,8 @@
-↑convertigo: 7.7.1.m006
+↑convertigo: 7.9.0.m006
 ↓IonicConferenceApp [core.Project]: 
   comment: This demo is based on Ionic Conference App but using the Convertigo Mobile Builder.
   corsOrigin: =Origin
-  version: 7.8.0
+  version: 7.9.0
   ↓conferenceapp [connectors.FullSyncConnector]: 🗏 connectors/conferenceapp.yaml
   ↓CheckRemoteInit [sequences.GenericSequence]: 🗏 sequences/CheckRemoteInit.yaml
   ↓fill_all_database [sequences.GenericSequence]: 🗏 sequences/fill_all_database.yaml
@@ -11,6 +11,10 @@
   ↓fill_speakers [sequences.GenericSequence]: 🗏 sequences/fill_speakers.yaml
   ↓fill_tracks [sequences.GenericSequence]: 🗏 sequences/fill_tracks.yaml
   ↓login [sequences.GenericSequence]: 🗏 sequences/login.yaml
+  ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
+    urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
+  ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0
   ↓MobileApplication [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate
@@ -19,7 +23,3 @@
     ↓iOS [mobileplatforms.IOs]: 
       comment: iOS 7, 8, 9 for iPhone and iPad
     ↓Application [mobile.components.ApplicationComponent]: 🗏 mobileApplication.yaml
-  ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
-    urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
-  ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0

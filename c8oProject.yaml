@@ -14,7 +14,7 @@
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
   ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0
+    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0:autoPull=true
   ↓MobileApplication [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate

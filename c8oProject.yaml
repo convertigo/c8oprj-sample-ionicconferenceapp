@@ -13,8 +13,8 @@
   ↓login [sequences.GenericSequence]: 🗏 sequences/login.yaml
   ↓CouchDb_schema [references.ImportXsdSchemaReference]: 
     urlpath: http://localhost:18080/convertigo/xsd/couchdb/CouchDb.xsd
-  ↓mobilebuilder_tpl_7_8_0_reference [references.ProjectSchemaReference]: 
-    projectName: mobilebuilder_tpl_7_8_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_7_8_0:autoPull=true
+  ↓Project_reference [references.ProjectSchemaReference]: 
+    projectName: mobilebuilder_tpl_7_9_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_7_9_0.zip
   ↓MobileApplication [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate
